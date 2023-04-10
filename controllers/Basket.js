@@ -6,6 +6,7 @@ const maxAge = 60 * 60 * 1000 * 24 * 365 // один год
 const signed = true
 
 class Basket {
+
     async getOne(req, res, next) {
         try {
             let basket

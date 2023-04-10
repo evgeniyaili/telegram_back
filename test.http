@@ -93,7 +93,7 @@ Content-Type: image/jpeg
 
 ### Список всех категорий
 GET /api/category/getall HTTP/1.1
-Host: localhost:7000
+Host: localhost:3001
 
 ### Получить одну категорию
 GET /api/category/getone/1 HTTP/1.1
