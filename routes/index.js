@@ -14,12 +14,10 @@ const router = new express.Router()
 router.use('/product', product)
 router.use('/category', category)
 router.use('/brand', brand)
-router.use('/user', user)
+//router.use('/user', user)
 router.use('/basket', basket)
-router.use('/rating', rating)
+//router.use('/rating', rating)
 router.use('/order', order)
-router.use("/zalupa", () => {
-    console.log("get it")
-})
+
 
 export default router
