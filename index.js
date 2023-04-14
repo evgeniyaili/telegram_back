@@ -15,7 +15,7 @@ import {Telegraf} from "telegraf"
 
 
 
-const WAurl = 'https://ihatepineapples.ru';
+const WAurl = 'https://ihatepineapples.ru'
 const PORT = process.env.PORT || 3001
 const app = express()
 const bot = new Telegraf(process.env.TOKEN) 
