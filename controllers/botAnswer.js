@@ -63,7 +63,7 @@ const post = (bot) => {
         res.status(500).send({ done: false, error: error.message });
       });
   };
-};
+}
 
 const postSendInvoice = (bot) => {
   return async (req, res) => {
