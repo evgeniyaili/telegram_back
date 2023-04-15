@@ -1,9 +1,9 @@
 import { Sequelize } from 'sequelize'
 
 export default new Sequelize(
-    developer, // база данных
-    postgres, // пользователь
-    qaswed, // пароль
+    developer, 
+    developer, 
+    qaswed, 
     {
         dialect: 'postgres',
         host: '45.145.65.24',
@@ -18,9 +18,9 @@ export default new Sequelize(
 )
 
 // export default new Sequelize(
-//     process.env.DB_NAME, // база данных
-//     process.env.DB_USER, // пользователь
-//     process.env.DB_PASS, // пароль
+//     process.env.DB_NAME, 
+//     process.env.DB_USER, 
+//     process.env.DB_PASS, 
 //     {
 //         dialect: 'postgres',
 //         host: process.env.DB_HOST,
