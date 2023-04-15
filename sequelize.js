@@ -6,7 +6,7 @@ export default new Sequelize(
     qaswed, 
     {
         dialect: 'postgres',
-        host: '45.145.65.24',
+        host: '192.168.0.2',
         port: 5432,
         define: {
             // в базе данных поля будут created_at и updated_at
