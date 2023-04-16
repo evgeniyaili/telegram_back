@@ -21,7 +21,7 @@ const app = express()
 const bot = new Telegraf(process.env.TOKEN) 
 
 // Cross-Origin Resource Sharing
-app.use(cors({origin: ['http://192.168.0.2:3000'], credentials: true}))
+app.use(cors({origin: ['http://5.159.100.20:3000'], credentials: true}))
 // middleware для работы с json
 app.use(express.json())
 // middleware для статики (img, css)
