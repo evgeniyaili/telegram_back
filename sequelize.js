@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize'
 
 
 export default new Sequelize(
-    "postgres","postgres","qaswed",
+    'postgres://postgres:postgres@192.168.0.2:5432/postgres',
     {
         dialect: 'postgres',
         host: process.env.DB_HOST,
