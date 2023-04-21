@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize'
-require('dotenv').config()
+import config from 'dotenv/config'
 
 export default new Sequelize(
     process.env.DB_NAME, 
