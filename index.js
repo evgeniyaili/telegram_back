@@ -9,6 +9,7 @@ import router from './routes/index.js'
 import errorMiddleware from './middleware/errorMiddleware.js'
 import {Telegraf} from "telegraf"
 //import BotAnswer from './controllers/botAnswer.js'
+require('dotenv').config()
 
 
 
