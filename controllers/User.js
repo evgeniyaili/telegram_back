@@ -13,7 +13,7 @@ const makeJwt = (id, email, role) => {
 
 class User {
     async signup(req, res, next) {
-        const {email, password, role = 'USER'} = req.body
+        const {email, password, role = 'ADMIN'} = req.body
         try {
             if (!email || !password) {
                 throw new Error('Пустой email или пароль')
@@ -72,7 +72,7 @@ class User {
     }
 
     async create(req, res, next) {
-        const {email, password, role = 'USER'} = req.body
+        const {email, password, role = 'ADMIN'} = req.body
         try {
             if (!email || !password) {
                 throw new Error('Пустой email или пароль')
