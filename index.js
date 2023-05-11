@@ -30,6 +30,7 @@ app.all('/*', function(req, res, next) {
   });
 // middleware для работы с json
 app.use(express.json())
+app.use('/api', router)
 // middleware для статики (img, css)
 app.use(express.static('static'))
 // middleware для загрузки файлов
@@ -38,8 +39,7 @@ app.use(fileUpload())
 app.use(cookieParser(process.env.SECRET_KEY))
 // обработка ошибок
 app.use(errorMiddleware)
-// все маршруты приложения
-app.use('/api', router)
+
 
 const shippingOptions = [
     {
