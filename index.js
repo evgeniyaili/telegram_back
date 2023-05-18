@@ -16,18 +16,18 @@ import {Telegraf} from "telegraf"
 
 
 
-const WAurl = 'https://ihatepineapples.ru';
+const WAurl = 'https://unrivaled-peony-83c0f1.netlify.app/';
 const PORT = process.env.PORT || 3001
 const app = express()
 const bot = new Telegraf(process.env.TOKEN) 
 
 // Cross-Origin Resource Sharing
-app.use(cors({origin: ['https://ihatepineapples.ru'], credentials: true}))
-app.all('/*', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    next();
-  });
+app.use(cors({origin: ['http://localhost:3000'], credentials: true}))
+// app.all('/*', function(req, res, next) {
+//     res.header("Access-Control-Allow-Origin", "*");
+//     res.header("Access-Control-Allow-Headers", "X-Requested-With");
+//     next();
+//   });
 // middleware для работы с json
 app.use(express.json())
 // middleware для статики (img, css)
